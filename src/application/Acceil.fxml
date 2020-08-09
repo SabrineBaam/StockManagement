@@ -2,8 +2,6 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -44,7 +42,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <Button fx:id="DeleteBtn" mnemonicParsing="false" onAction="#UpdateProduct" text="Delete Product">
+            <Button fx:id="DeleteBtn" mnemonicParsing="false" onAction="#DeleteProduct" text="Delete Product">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
@@ -54,25 +52,15 @@
             <Insets />
          </opaqueInsets>
       </VBox>
-      <VBox alignment="TOP_CENTER" fillWidth="false" layoutX="578.0" layoutY="433.0" prefHeight="217.0" prefWidth="386.0" spacing="50.0">
-         <children>
-            <Label text="Please Enter the Product's Reference">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <TextField prefHeight="30.0" prefWidth="306.0" promptText="Reference" />
-            <Button mnemonicParsing="false" onAction="#SearchProduct" prefHeight="39.0" prefWidth="125.0" text="Search">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Button>
-         </children>
-      </VBox>
-      <Button fx:id="BtnProdList" layoutX="383.0" layoutY="652.0" mnemonicParsing="false" onAction="#ProductList" prefHeight="39.0" prefWidth="173.0" text="Product List">
+      <Button fx:id="BtnProdList" layoutX="727.0" layoutY="496.0" mnemonicParsing="false" onAction="#ProductList" prefHeight="39.0" prefWidth="173.0" text="Product List">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Button>
+      <ImageView fitHeight="250.0" fitWidth="300.0" layoutX="348.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sm.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
