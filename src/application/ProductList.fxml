@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1">
-	<!-- TODO Add Nodes -->
+<AnchorPane fx:id="ProductList" prefHeight="541.0" prefWidth="383.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProductListController">
+   <children>
+      <TableView fx:id="tabView" layoutX="5.0" layoutY="6.0" prefHeight="179.0" prefWidth="374.0" />
+   </children>
 </AnchorPane>
+
