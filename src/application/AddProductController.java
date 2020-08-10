@@ -52,7 +52,6 @@ public class AddProductController {
 
 		
 	}
-	
 	public void initialize() {
 		int count=0;
 		Connection conn =Functions.dbConnect("jdbc:sqlserver://127.0.0.1;databaseName=StockManagement", "sa", "SabrineBaam");
